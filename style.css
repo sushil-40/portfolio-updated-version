@@ -409,7 +409,7 @@ div > span {
   position: fixed;
 } */
 .projects-section {
-  background: url("./assets/project-bg-4.gif") no-repeat;
+  background: url("./assets/projects-bg-1.png") no-repeat;
   /* background-attachment: fixed;
   background-repeat: no-repeat;*/
   background-size: cover;
@@ -469,8 +469,10 @@ div > span {
   padding: 7rem 0;
 
   flex-wrap: wrap;
-  background: url("./assets/about-4.png") no-repeat;
+  background: url("./assets/about-bg-4.png") no-repeat;
   background-size: cover;
+
+  background-position: center;
   /* background-position: center bottom; Aligns image bottom */
   /* background: url("/assets/hero-bg.jpg");
   background-attachment: fixed;
@@ -587,7 +589,7 @@ footer {
   margin-top: 5rem;
   flex-direction: column;
   /* background: url("/assets/footer-bg.png"); */
-  background: url("/assets/footer-bg-1.png");
+  background: url("/assets/footer-bg-2.png");
 
   background-size: cover;
 }
