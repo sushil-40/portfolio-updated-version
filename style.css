@@ -322,11 +322,12 @@ h1 {
   margin-top: 5rem;
   height: 60vh;
 
-  background: url("./assets/neon-1.png");
+  background: url("./assets/neon-4.png");
 
   background-repeat: no-repeat;
-  background-position: center bottom; /* Aligns image bottom */
   background-size: cover;
+  background-position: center bottom;
+  /* Aligns image bottom */
 }
 .skills-container {
   /* background: url("./assets/hbg-1.gif");
@@ -409,7 +410,7 @@ div > span {
   position: fixed;
 } */
 .projects-section {
-  background: url("./assets/projects-bg-1.png") no-repeat;
+  background: url("./assets/prj-2.png") no-repeat;
   /* background-attachment: fixed;
   background-repeat: no-repeat;*/
   background-size: cover;
@@ -589,7 +590,7 @@ footer {
   margin-top: 5rem;
   flex-direction: column;
   /* background: url("/assets/footer-bg.png"); */
-  background: url("/assets/footer-bg-2.png");
+  background: url("/assets/fbg-4.png");
 
   background-size: cover;
 }
