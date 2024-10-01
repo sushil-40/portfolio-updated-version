@@ -770,6 +770,7 @@ section.visible {
   [for="hamburgerMenu"] {
     cursor: pointer;
     display: block; /* Show the hamburger icon */
+    overflow: hidden;
   }
 
   .menu {
