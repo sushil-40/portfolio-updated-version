@@ -679,3 +679,131 @@ section.visible {
   opacity: 1;
   transform: translateX(0); /* Move to natural position */
 }
+
+/*      **********  Media Queries */
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Reduce the container width for better mobile viewing */
+  }
+
+  .flex {
+    flex-direction: column; /* Stack flex items vertically on smaller screens */
+    gap: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Make grid items stack vertically */
+  }
+
+  /* Make title fonts smaller */
+  .title {
+    font-size: 30px;
+  }
+
+  .hero-section {
+    height: 60vh; /* Reduce hero section height */
+  }
+
+  .left-container {
+    width: 90%; /* Make it full width for better fit */
+    margin-left: 5vw;
+    position: relative; /* Remove the fixed position */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust heading size for mobile */
+  }
+
+  .p1 {
+    font-size: 1.5rem;
+  }
+
+  .p2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .auto-type {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    font-size: 20px; /* Adjust icon sizes for mobile */
+  }
+
+  .skills {
+    height: auto; /* Allow skills section to adapt to content */
+  }
+
+  .skills-container {
+    flex-direction: column; /* Stack skill sections on mobile */
+  }
+
+  .about .myImg {
+    max-width: 100%; /* Make image take full width */
+  }
+
+  .about .my-bio {
+    max-width: 100%; /* Full width for bio section */
+  }
+
+  .projects .project-container {
+    grid-template-columns: 1fr; /* Stack project cards vertically */
+  }
+
+  .project-card-test {
+    width: 100%; /* Full width for mobile */
+    height: auto;
+  }
+
+  footer .top {
+    flex-direction: column; /* Stack footer items on mobile */
+    gap: 2rem;
+  }
+
+  /* Hamburger menu display */
+  [for="hamburgerMenu"] {
+    cursor: pointer;
+    display: block; /* Show the hamburger icon */
+  }
+
+  .menu {
+    position: absolute;
+    background: var(--body-bg);
+
+    width: 180px;
+    height: 100vh;
+    top: 9.5rem;
+
+    box-shadow: var(--shadow);
+
+    left: 100vw;
+    transition: all 0.5s;
+    opacity: 0.8;
+  }
+
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.3rem;
+    /* opacity: 0.8;
+    z-index: 4; */
+  }
+
+  .menu .navigation li {
+    line-height: 5.5rem;
+  }
+
+  #hamburgerMenu:checked + .menu {
+    left: calc(65vw);
+  }
+
+  .social {
+    justify-content: center;
+    align-items: center;
+  }
+}
