@@ -414,14 +414,15 @@ div > span {
   /* background-attachment: fixed;
   background-repeat: no-repeat;*/
   background-size: cover;
-  background-position: center bottom; /* Aligns image bottom */
+  /* background-position: center bottom;  */
+  /* Aligns image bottom */
 }
 .projects {
   margin-top: 5rem;
 }
 
 .project-card-test {
-  width: 300px;
+  width: 250px;
   height: 350px;
   border: 1px solid rgb(40, 27, 219);
   border-radius: 60px;
@@ -446,7 +447,7 @@ div > span {
 }
 
 .projects .project-container {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .projects .project-card {
@@ -669,8 +670,8 @@ section.visible {
 /* Specific styling for skill items */
 .skill-item {
   opacity: 0;
-  transform: translateX(-50px); /* Start slightly off-screen to the left */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateX(-20px); /* Start slightly off-screen to the left */
+  transition: opacity 0.8s ease-out, transform 1s ease-out;
 }
 
 /* Visible state for skill items */
