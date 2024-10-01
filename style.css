@@ -707,6 +707,7 @@ section.visible {
 
   .hero-section {
     height: auto; /* Reduce hero section height */
+    background-size: cover;
   }
 
   .left-container {
