@@ -157,26 +157,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll(); // Initial check
-
-  //hamburgerMenu
-
-  const hamburgerMenu = document.getElementById("hamburgerMenu");
-  const menu = document.querySelector(".menu");
-
-  hamburgerMenu.addEventListener("change", () => {
-    if (hamburgerMenu.checked) {
-      menu.style.display = "block";
-    } else {
-      menu.style.display = "none";
-    }
-  });
-
-  // close the menu when a link is clicked
-  const menuLinks = doucment.querySelectorAll(".menu a");
-  menuLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      hamburgerMenu.checked = false;
-      menu.style.display = "none";
-    });
-  });
 });
+
+const hamburgerMenu = document.getElementById("hamburgerMenu");
+const menu = document.querySelector(".menu");
+
+hamburgerMenu.addEventListener("change", () => {
+  if (hamburgerMenu.checked) {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+});
+
+// close the menu when a link is clicked
+// const menuLinks = doucment.querySelectorAll(".menu a");
+// menuLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     hamburgerMenu.checked = false;
+//     menu.style.display = "none";
+//  });
+//});

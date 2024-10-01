@@ -706,7 +706,7 @@ section.visible {
   }
 
   .hero-section {
-    height: 60vh; /* Reduce hero section height */
+    height: auto; /* Reduce hero section height */
   }
 
   .left-container {
@@ -733,7 +733,11 @@ section.visible {
   }
 
   .social-links {
-    font-size: 20px; /* Adjust icon sizes for mobile */
+    /* Adjust icon sizes for mobile */
+    /* margin-left: 40px; */
+
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .skills {
@@ -787,6 +791,7 @@ section.visible {
     transition: all 0.5s;
     opacity: 0.8;
     display: none;
+    overflow: hidden;
   }
 
   .menu .navigation {
