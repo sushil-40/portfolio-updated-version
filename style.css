@@ -304,6 +304,7 @@ h1 {
   margin-top: -2vh;
   margin-left: 22vw;
   /* background: url("./assets/c.png"); */
+  /* background-color: #111; */
   background-size: cover;
   width: 720px;
 
@@ -705,9 +706,12 @@ section.visible {
     font-size: 30px;
   }
 
-  .hero-section {
+  .hero {
     height: auto; /* Reduce hero section height */
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: contain; /* Ensure the background image scales to fit the screen */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
   }
 
   .left-container {
@@ -750,11 +754,15 @@ section.visible {
     flex-direction: column; /* Stack skill sections on mobile */
   }
 
-  .about .myImg {
+  .about {
     max-width: 100%; /* Make image take full width */
+    background-size: contain; /* Ensure the background image scales to fit the screen */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
   }
 
   .about .my-bio {
+    margin-left: 30vw;
     max-width: 100%; /* Full width for bio section */
   }
 
