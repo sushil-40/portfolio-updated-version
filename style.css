@@ -708,10 +708,11 @@ section.visible {
 
   .hero {
     height: auto; /* Reduce hero section height */
-    /* background-size: cover; */
-    background-size: contain; /* Ensure the background image scales to fit the screen */
-    /* background-position: center; Center the image */
-    /* background-repeat: no-repeat; Prevent image from repeating */
+    background-size: cover;
+    /* background-size: contain; Ensure the background image scales to fit the screen */
+    /* background-position: center center; Center the image */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
   }
 
   .left-container {
