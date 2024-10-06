@@ -337,6 +337,7 @@ h1 {
     rgb(236, 38, 117)
   );
   position: relative;
+
   /* clip-path: polygon(
     50% 0,
     85% 15%,
@@ -382,10 +383,10 @@ h1 {
 
   animation: 4s spin linear infinite;
 }
-.card::before {
+/* .card::before {
   filter: blur(1.5rem);
   opacity: 0.5;
-}
+} */
 
 @keyframes spin {
   from {
