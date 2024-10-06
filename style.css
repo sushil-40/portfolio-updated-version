@@ -301,8 +301,8 @@ h1 {
 }
 
 .right-container {
-  margin-top: -2vh;
-  margin-left: 22vw;
+  margin-top: -1vh;
+  margin-left: 55vw;
   /* background: url("./assets/c.png"); */
   /* background-color: #111; */
   background-size: cover;
@@ -317,6 +317,84 @@ h1 {
   /* animation: slideInRight 1s ease-in-out; */
 }
 
+/* Adding animation and glow to the shape */
+.card {
+  margin: 0 auto;
+
+  top: 120px;
+  padding: 2rem;
+  width: 200px;
+  height: 200px;
+  background: black;
+  text-align: center;
+  border-radius: 10px;
+
+  background: conic-gradient(
+    from 80deg,
+    rgb(236, 38, 117),
+    rgb(98, 149, 245),
+    #59ec65,
+    rgb(236, 38, 117)
+  );
+  position: relative;
+  /* clip-path: polygon(
+    50% 0,
+    85% 15%,
+    100% 50%,
+    85% 85%,
+    50% 100%,
+    15% 85%,
+    0 50%,
+    15% 15%
+  ); */
+
+  /* clip-path: polygon(
+    25% 10%,
+    75% 10%,
+
+    100% 50%,
+    75% 95%,
+
+    25% 95%,
+    0 50%
+  ); */
+  /* clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%); */
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 50%, blue);
+  /* background: red; */
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+
+  animation: 4s spin linear infinite;
+}
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
 /* <!-- skills section --> */
 /* progress bar  */
 .skills {
