@@ -399,7 +399,7 @@ h1 {
 /* progress bar  */
 .skills {
   margin-top: 5rem;
-  height: 60vh;
+  height: auto;
 
   background: url("./assets/neon-4.png");
 
@@ -424,6 +424,7 @@ h1 {
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.7; */
+  margin-bottom: 40px;
 }
 .skills-container > div {
   display: flex;
