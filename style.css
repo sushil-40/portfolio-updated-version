@@ -336,6 +336,7 @@ h1 {
     #59ec65,
     rgb(236, 38, 117)
   );
+  opacity: 0.3;
   position: relative;
 
   /* clip-path: polygon(
