@@ -529,7 +529,7 @@ div > span {
 }
 
 .projects .project-container {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .projects .project-card {
@@ -850,10 +850,15 @@ section.visible {
 
   .projects .project-container {
     grid-template-columns: 1fr; /* Stack project cards vertically */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .project-card-test {
-    width: 100%; /* Full width for mobile */
+    width: 60%; /* Full width for mobile */
+    margin-left: 150px;
+
     height: auto;
   }
 

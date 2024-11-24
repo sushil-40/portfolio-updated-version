@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (itemTop < triggerBottom) {
         item.classList.add("visible");
-        item.style.transitionDelay = `${index * 0.2}s`; // Delay for a staggered effect
+        item.style.transitionDelay = `${index * 0.01}s`; // Delay for a staggered effect
       } else {
         item.classList.remove("visible");
       }
